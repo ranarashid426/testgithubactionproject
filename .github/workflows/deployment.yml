@@ -1,0 +1,18 @@
+name: deployement exercise 1
+on: push
+jobs:
+    allinone:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Get the code
+              uses: actions/checkout@v3
+            - name: install the dependencies
+              run: npm ci
+            - name: Run the lint
+              run: npm run lint
+            - name: run the tests
+              run: npm run test
+            - name: Build the App
+              run: npm run build
+            - name: Deploye the app
+              run: echo "deploying ...."    
