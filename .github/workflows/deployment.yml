@@ -2,7 +2,7 @@ name: deployement exercise 1
 on: 
     push:
         branches:
-            - main
+            - master
 jobs:
     allinone:
         runs-on: ubuntu-latest
