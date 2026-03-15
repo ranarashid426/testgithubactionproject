@@ -1,5 +1,9 @@
 name: deployement exercise 1
-on: push
+on: 
+    push:
+        branches:
+            - develop
+            
 jobs:
     allinone:
         runs-on: ubuntu-latest
