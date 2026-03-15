@@ -2,7 +2,7 @@ name: deployement exercise 1
 on: 
     push:
         branches:
-            - develop
+            - main
             
 jobs:
     allinone:
