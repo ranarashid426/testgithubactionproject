@@ -1,0 +1,8 @@
+name: infolog exercise 1
+on: issues
+jobs:
+    Getloginfo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Output the event details
+              run: echo "The event details are ${{github.event}}"
